@@ -1,0 +1,30 @@
+<div class="main-background">
+
+	<div class="container module ">
+
+		<div class="section relative" style="padding : 0 !important;">
+			<check if="{{ @isAdminPage }}">
+				<div class="row no-margin"><p class="infoModule white-text no-margin relative center-align"
+											  style="font-size: small; width : 100%; ">
+					<!--i>Seul les champs avec une date complétée seront visibles</i-->
+				</p></div>
+			</check>
+			<repeat group="{{ [1,2,3] }}" value="{{ @index }}">
+				<check if="{{ @fields['content'.@index]['value'] || @isAdminPage}}">
+
+					<div class="relative">
+							<ul class="collapsible">
+									<li>
+									  <div class="collapsible-header editable">{{@fields['title'.@index]['value']}}</div>
+									  <div class="collapsible-body panel editable"><span>{{@fields['content'.@index]['value']| raw}}</span></div>
+									</li>						
+								  </ul>
+					</div>
+
+				</check>
+
+			</repeat>
+
+		</div>
+	</div>
+</div>

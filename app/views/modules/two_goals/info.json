@@ -1,0 +1,26 @@
+{
+  "name": "two_goals",
+  "title": "Deux objectifs",
+  "description": "Module permettant d'afficher deux aspects de ce que vous souhaitez presenter à travers le site",
+  "tags": "moduleTag-text moduleTag-cv",
+  "hidden": false,
+  "fields": {
+    "icon1": {
+      "type": "text",
+      "value": "face"
+    },
+    "content1": {
+      "type": "text",
+      "value": "<h5>Faites une belle page web en moins d'une heure</h5><p>NoemieCMS est un outil libre qui vous offre tout ce qu’il faut pour faire une page web en toute indépendance — vous avez le contrôle de votre page web : c’est vous l’admin !</p>"
+    },
+    
+    "icon3": {
+      "type": "text",
+      "value": "tag_faces"
+    },
+    "content3": {
+      "type": "text",
+      "value": "<h5>D'une simplicité décoiffante</h5><p>Dans NoemieCMS, tout est pensé pour être le plus intuitif possible</p>"
+    }
+  }
+}
